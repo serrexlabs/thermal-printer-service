@@ -1,0 +1,3 @@
+<print-service  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:settingsActivity="com.serrexlabs.printservice.SettingsActivity"
+    android:addPrintersActivity="com.serrexlabs.printservice.AddPrinterActivity"/>
