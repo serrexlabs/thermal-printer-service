@@ -1,15 +1,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:weightSum="1">
 
-    <ListView
-        android:id="@+id/paired_devices"
-        android:layout_marginTop="60dp"
-        android:layout_height="518dp"
+
+    <ImageView
         android:layout_width="match_parent"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="10.0sp">
-    </ListView>
-
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_light"
+        android:id="@+id/imageView"
+        android:layout_weight="0.59"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitCenter" />
 </LinearLayout>

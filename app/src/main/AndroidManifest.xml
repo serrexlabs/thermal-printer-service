@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -43,8 +43,16 @@
         <activity
             android:name=".AddPrinterActivity"
             android:label="@string/title_activity_add_printer"
-            android:permission="android.permission.BIND_PRINT_SERVICE">
-        </activity>
+            android:permission="android.permission.BIND_PRINT_SERVICE"></activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".PrintPreview"></activity>
     </application>
 
 </manifest>

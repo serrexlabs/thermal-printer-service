@@ -31,16 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
+        android:src="@drawable/ic_print_white_24dp" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/print"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_menu_send"
-        app:layout_anchor="@+id/include"
-        app:layout_anchorGravity="center_vertical|center_horizontal"
-        android:layout_gravity="center_vertical|center_horizontal" />
 
 </android.support.design.widget.CoordinatorLayout>
