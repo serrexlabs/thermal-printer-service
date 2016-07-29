@@ -20,6 +20,8 @@ import android.widget.ImageView;
 import com.serrexlabs.printservice.util.PrintBitmap;
 import com.serrexlabs.printservice.util.PrintUtils;
 import com.zj.btsdk.BluetoothService;
+
+import java.io.File;
 import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
             PrintUtils pu = new PrintUtils(filePath);
             printData = pu.getBitmapImages();
             imageView.setImageBitmap(printData);
+            new File(filePath).delete();
         }
 
         mPairedDevices = new ArrayAdapter<String>(MainActivity.this,
